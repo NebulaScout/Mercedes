@@ -1,0 +1,213 @@
+/* General */
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+p{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.8em;
+}
+
+
+li{
+    
+    font-family: "Playfair Display", serif;
+    font-size: large;
+    list-style-type: none;
+    display: inline-flex;
+}
+
+h1, h2{
+    font-family: "Playfair Display", serif;
+    font-size: 4em;
+    font-weight: 400;
+    font-style: normal;
+}
+
+img{
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+/* top-section */
+.top-section{
+    background-color: black;
+    height: -1vh;
+}
+
+/* Header section */
+.header-links ul{
+    padding: 20px;
+}
+
+.header-links span.logo-header{
+    color: aliceblue;
+    margin: 13px;
+    padding-top: 13px;
+    font-size: 27px;
+}
+
+
+li.membership{
+    display: block;
+    float: right;
+    margin: 2px;
+}
+
+li.membership a, .pipe{
+    color: rgb(159, 189, 216);
+
+}
+
+
+/* Navigation Bar */
+.navbar-links a{
+    display: block;
+    padding: 0px 30px;
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    overflow: hidden;
+    
+}
+
+.navbar-links ul{
+    position: relative;
+    text-align: center;
+    padding: 30px 0px;
+    /* margin-left: 10%; */
+    background-color: rgb(159, 156, 152);
+}
+
+/* intro */
+.intro h1{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 5em;
+    text-decoration: overline;
+}
+
+/* main-section */
+
+.left-align{
+    display: flex;
+    /* float: left; */
+    margin-top: 0px ;
+    
+}
+
+/*  make e class responsive */
+.left-align.content-1 p{
+    margin-left: 50px;
+    padding-top: 20%;
+}
+
+.left-align.content-3 p{
+    padding-top: 5%;
+    margin-left: 15px;
+}
+
+.left-align.content-5 p{
+    padding-top: 10%;
+    margin-left: 20px;
+}
+
+.left-align.content-7 p{
+    padding-top: 12%;
+    margin-left: 15px;
+}
+
+.right-align{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 0px;
+    background-color: black;
+    color: azure;
+}
+
+.right-align.content-2 p{
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-top: 9%;
+}
+
+.right-align.content-4 p{
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-top: 12%;
+}
+
+.right-align.content-6 p{
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-top: 25%;
+}
+
+.right-align.content-8 p{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 10%;
+}
+
+/* Footer-section */
+
+.footer-links{
+    position: relative;
+    display: block;
+    padding: 20px;
+    background-color: rgb(159, 156, 152);
+    text-align: center;
+    /* margin-top: ; */
+}
+
+.footer-links a{
+        text-align: center;
+        padding: 20px;
+        color: rgb(0, 0, 0);
+        font-size: larger;
+        overflow: hidden;
+}
+
+/* Responsiveness */
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    .left-align,
+    .right-align {
+        flex-direction: row;
+    }
+
+    .left-align img,
+    .right-align img {
+        max-width: 50%;
+    }
+
+    .left-align.content-1 p,
+    .left-align.content-3 p,
+    .left-align.content-5 p,
+    .left-align.content-7 p,
+    .right-align.content-2 p,
+    .right-align.content-4 p,
+    .right-align.content-6 p,
+    .right-align.content-8 p {
+        margin: 0;
+    }
+}

@@ -1,15 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="Test-App">
 <head>
     <meta charset="UTF-8">
-    <title>Mercedes-benz</title>
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="./assets/favicon/mercedes.png">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Favicon -->
+     <link rel="icon" type="image/x-icon" href="./assets/favicon/mercedes.png">
+     <title>Mercedes-benz</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Document</title>
 </head>
-    <frameset rows=7%,7%,*,10% >
-        <frame name="header" src="./pages/header.html"/>
-        <frame name="sections" src="./pages/sections.html">
-        <frame name="main" src="./pages/main.html"/>
-        <frame name="footer" src="./pages/footer.html"/>
-    </frameset>
+<body ng-controller="testCtrl">
+    <div class="main">
+        <div class="flex-container">
+            <div class="top-section">
+                <!-- Header -->
+                <div id="header">
+                    <div class="header-links">
+                        <ul>
+                            <li class="logo"><a href="./index.html" class="link"><img src="./assets/logo/mercedes-logo.png" alt="Mercedes benz Trademark" height="70" width="70"></a><span class="logo-header">Mercedes-Benz</span></li>
+                            <li class="membership login"><a href="#">Login</a></li>
+                            <li class="membership sign-up"><a href="./pages/sign-up.html" target="_blank">Sign up</a> <span class="pipe">||</span></li>
+                        </ul>
+                    </div> <!-- End of header-links-->
+                </div> <!-- End of header-->
+        
+                <!-- navigation bar -->
+                <div class="navbar-links">
+                <ul>
+                    <li class="home"><a href="#">Home</a></li>
+                    <li class="vehicles"><a href="#">Vehicles</a></li>
+                    <li class="about"><a href="#">About</a></li>
+                    <li class="socials"><a href="#">Socials</a></li>
+                </ul>
+                </div> <!-- End of navbar-links-->
+            </div> <!-- End of top-section-->
+    
+            <!-- main section -->
+            <div class="main-section">
+                <div class="intro">
+                    <h1>Defining Class</h1>
+                </div>
+
+                <div class="left-align content-1">
+                    <img src=" ./assets/images/Mercedes-benz-ring.jpg" alt="Mercedes benz ring" height="800" width="550">
+                    <p>Embark on a journey of elegance and innovation with our Mercedes collection. Where sophistication meets performance, every drive is a statement of luxury.</p>
+                </div>
+            
+                <div class="right-align content-2">
+                    <img src=" ./assets/images/1910-Buick-model.jpg" alt="The 1910 MErcedes Buick model">
+                    <p>Vintage allure, timeless prestige – Mercedes-Benz, where the echoes of sophistication reverberate through the ages. Step into the classic embrace of high-end craftsmanship that transcends time.</p>
+                </div>
+        
+                <div class="left-align content-3">
+                        <img src=" ./assets/images/Mercedes-e-class.jpg" alt="Mercedes amg e-class" height= "300" width="900">
+                        <p>Experience the thrill of commanding power under the hood, paired with an array of intelligent features that redefine connectivity and safety. The E-Class isn't just a car; it's a statement of refined taste, a harmonious blend of style and substance. Whether you crave the thrill of dynamic driving or the comfort of a first-class cabin, the Mercedes-Benz E-Class is poised to exceed your expectations, setting new standards in the world of luxury automobiles.</p>
+                </div>
+                
+                <div class="right-align content-4">
+                    <img src=" ./assets/images/mercedes-amg-s-63-e-interior.jpg" alt="Mercedes amg S-63 interior" height="700" width="1000">
+                    <p>Elevate your drive to a realm of pure indulgence. The Mercedes-Benz S-Class is not just a car; it's a statement of refined taste, a sanctuary of comfort and style.</p>
+                </div>
+            
+                <div class="left-align content-5">
+                    <img src=" ./assets/images/mercedes-c63s-coupe-black.jpeg" alt="Mercedes C-63s coupe">
+                    <p>Sculpted for the city, engineered for exhilaration. The Mercedes-Benz C-Class – your passport to a world where luxury and dynamism converge effortlessly.</p>
+                </div>
+            
+                <div class="right-align content-6">
+                    <img src=" ./assets/images/1957-300-SL-coupe.jpg" alt="1957 300 SL coupe" height="800" width="600">
+                    <p>The 1957 300 SL Coupe – where nostalgia meets horsepower. A relic of the past that still roars with the spirit of adventure, reminding us of the golden age of automotive design and engineering.</p>
+                </div>
+            
+                <div class="left-align content-7">
+                    <img src=" ./assets/images/Maybach-S-580.jpg" alt="Mercedes Maybach S-class">
+                    <p>Crafted for those who demand the extraordinary, Maybach stands as a testament to automotive magnificence. Drive into a realm where time-honored tradition meets cutting-edge technology.</p>
+                </div>
+            
+                <div class="right-align content-8">
+                    <img src=" ./assets/images/g_400d_amg_line-one_one.jpeg" alt="Mercedes G class amg" height="900" width="900">
+                    <p>Distinguished on Any Terrain, Admired on Every Street – The G-Class: A Symbol of Grit and Glamour. Unapologetically bold, the G-Class commands attention wherever it goes. Whether navigating through rocky terrains or turning heads in the city, its presence is nothing short of iconic. But the G-Class isn't just about appearances; it's about substance. Behind its rugged exterior lies a vehicle engineered for peak performance and unmatched durability. It's a symbol of grit and glamour, where the raw power of off-road capability meets the refined elegance of a luxury SUV. Embrace the duality, embrace the legend – this is the G-Class.</p>
+                </div>
+                
+            </div> <!-- End of main section-->
+        </div> <!-- End of flex-container-->
+    
+        <!-- footer -->
+        <div class="footer">
+
+            <div class="footer-links">
+                <ul>
+                    <!-- links -->
+                    <li><a href="./index.html">Home</a></li>
+                    <!-- Add dropdown -->
+                    <li><a href="">Vehicles</a></li>  
+                    <li><a href="">About</a></li>
+                    <li><a href="">Socials</a></li>
+                </ul>
+            </div> <!-- End of footer links-->
+        </div>  <!-- End of footer-->
+    </div> <!-- End of main section-->
+</body>
 </html>
