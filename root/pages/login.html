@@ -3,27 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../styles/login.css">
+  <link rel="stylesheet" href="../styles/membership.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="../assets/favicon/mercedes.png">
   <title>Login Form</title>
-  <style>
-   
-  </style>
 </head>
 <body>
   <div class="form-container">
-    <h2 class="form-title">Login</h2>
-    <form action="#">
+    <form action="#" method="post">
       <div class="form-group">
-        <label for="username" class="form-label">Username</label>
-        <input type="text" id="username" name="username" class="form-input" required>
-      </div>
-      <div class="form-group">
-        <label for="password" class="form-label">Password</label>
-        <input type="password" id="password" name="password" class="form-input" required>
-      </div>
-      <button type="submit" class="form-button">Login</button>&nbsp&nbsp&nbsp&nbsp
-      <button class="form-button sign-up"><a href="./sign-up.html">Sign up</a></button>
+          <fieldset>
+            <div class="form-items">
+              <legend><img src="../assets/membership/login.png" alt="Login icon"></legend>
+              <!-- username -->
+              <label for="username">Username:</label> <br>
+              <input type="text" id="username" name="username" placeholder="Saiyan#1" required> <br>
+              <!-- password -->
+              <label for="passwd">Password:</label> <br>
+              <input type="password" id="passwd" name="passwd" required> <br>
+
+              <input type="submit" value="Submit" id="submit">&nbsp&nbsp <!--submit-->
+              <input type="reset" value="Reset" id="reset">  <!--reset-->
+
+              <!-- Sign-up -->
+              <hr>
+              <p class="membership">Don't have an account? <a href="./sign-up.html" target="_self">Sign-up</a></p>
+
+            </div> <!--end form-items-->
+          </fieldset>
+      </div> <!--end form-group-->
     </form>
-  </div>
+  </div> <!-- End form-container -->
 </body>
 </html>
