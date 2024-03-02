@@ -1,0 +1,179 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  display: block;
+}
+
+img {
+  height: 60px;
+  width: 60px;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  margin: 0 auto;
+  height: 100vh;
+  max-height: fit-content;
+  overflow: hidden;
+}
+
+fieldset {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 6px;
+  max-width: 50%;
+  margin-left: 25%;
+  margin-top: 2%;
+}
+
+.form-items {
+  margin: 2%;
+}
+
+legend {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+label {
+  margin-bottom: 5px;
+  display: block;
+  color: #333;
+}
+
+#fname, #lname,  #email, #submit, #reset, #passwd, #dob, #username{
+  width: 90%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.radio label{
+  display: inline-block;
+  margin: 15px; 
+}
+
+#submit {
+  background-color: #4caf50;
+  color: white;
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#reset {
+  background-color: #f44336;
+  color: white;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#submit:hover, #reset:hover {
+  opacity: 0.8;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #ddd;
+  margin-bottom: 20px;
+}
+
+.membership {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.membership a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Responsive design */
+
+/* Mobile-device */
+@media screen and (max-width: 600px) {
+  body{
+    display: block;
+  }
+ 
+  form{
+  height: 100vh;
+  overflow: scroll;
+ 
+ }
+
+ img{
+  height: 45px;
+  width: 45px;
+ }
+
+ fieldset{
+  max-width: 100%;
+  margin: 0px;
+  padding: 0px;
+ }
+ 
+ .radio #gender {
+  display: block;
+ }
+}
+
+/* tablet */
+@media screen and (max-width: 900px) {
+  body{
+    display: block;
+  }
+  form{
+    height: 100vh;
+    overflow: scroll;
+  }
+
+  fieldset {
+    max-width: 100%;
+    margin: 20px;
+    padding: 10px; 
+  }
+}
+
+/* desktop */
+@media screen and (min-width: 901px)and(max-width: 1024px ) {
+  body {
+    display: block;
+    height: 100vh;
+    overflow: scroll;
+  }
+
+  form{
+    
+    margin: 10%;
+    overflow: visible;
+  }
+
+  fieldset {
+    max-width: 100%;
+  }
+}
+
