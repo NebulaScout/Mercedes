@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- styles -->
-  <link rel="stylesheet" href="../styles/sign-up.css">
-  <!-- Add favicon -->
+  <link rel="stylesheet" href="../styles/membership.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="../assets/favicon/mercedes.png">
   <title>Sign-up</title>
   
 </head>
@@ -15,39 +16,45 @@
       <div class="form-group">
           <fieldset>
             <div class="form-items">
-              <legend>Sign-up</legend>
+              <legend><img src="../assets/membership/sign-up.png" alt="Sign-up icon"></legend>
+              <hr>
+              <!-- Full name -->
               <label for="fname">First name:</label> <br>
-              <input type="text" id="fname" name="fname" placeholder="Son"> <br>
+              <input type="text" id="fname" name="fname" placeholder="Son" required> <br>
 
               <label for="lname">Last name:</label> <br>
               <input type="text" id="lname" name="lname" placeholder="Goku" required> <br>
-
+              
+              <!-- DoB -->
               <label for="dob">Date of Birth:</label> <br>
               <input type="date" id="dob" name="dob" required> <br>
-
+              
+              <!-- Gender -->
               <div class="radio">
-                <label for="gender">Gender:</label>&nbsp&nbsp
+                <label for="gender" id="gender">Gender:</label>&nbsp&nbsp
                 <input type="radio" id="male" name="gender" value="Male">
                 <label for="male">Male</label>&nbsp&nbsp
                 <input type="radio" id="female" name="gender" value="Female">
                 <label for="female">Female</label> <br>
               </div>
-
+              
+              <!-- Username -->
               <label for="username">Username:</label> <br>
               <input type="text" id="username" name="username" placeholder="Saiyan#1" required> <br>
 
+              <!-- Email -->
               <label for="email">Email:</label> <br>
               <input type="email" id="email" name="email" placeholder="songoku123@gmail.com" required> <br>
-
+              <!-- Password -->
               <label for="passwd">Password:</label> <br>
               <input type="password" id="passwd" name="passwd" required> <br>
 
-              <input type="submit" value="Submit" id="submit">&nbsp&nbsp
-              <input type="reset" value="Reset" id="reset">
+              <input type="submit" value="Submit" id="submit">&nbsp&nbsp <!--submit-->
+              <input type="reset" value="Reset" id="reset">  <!--reset-->
 
               <!-- Login -->
               <hr>
-              <p class="login">Already have an account? <a href="./login.html" target="_self">Login</a></p>
+              <p class="membership">Already have an account? <a href="./login.html" target="_self">Login</a></p>
 
             </div> <!--end form-items-->
           </fieldset>
