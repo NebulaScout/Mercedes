@@ -1,66 +1,107 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
-    font-family: sans-serif;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f5f5f5;
-    background-image: url("../assets/images/mercedes-maybach-s-class-interior-canvas.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  display: block;
+}
 
-  .form-container {
-    background-color: #fff;
-    padding: 60px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-  }
+.form-container {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-  .form-title {
-    text-align: center;
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #333;
-  }
+form {
+  margin: 0 auto;
+  height: 100vh;
+  max-height: fit-content;
+  overflow: hidden;
+}
 
-  .form-group {
-    margin-bottom: 15px;
-  }
+fieldset {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 6px;
+  max-width: 50%;
+  margin-left: 25%;
+  margin-top: 5%;
+}
 
-  .form-label {
-    display: block;
-    font-size: 14px;
-    color: #333;
-    margin-bottom: 5px;
-  }
+.form-items {
+  margin: 2%;
+}
 
-  .form-input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    font-size: 14px;
-  }
+legend {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
 
-  .form-button {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: background-color 0.2s ease-in-out;
-  }
+label {
+  margin-bottom: 5px;
+  display: block;
+  color: #333;
+}
 
-  .form-button:hover {
-    background-color: #222;
-  }
+#fname, #lname,  #email, #submit, #reset, #passwd, #dob, #username{
+  width: 90%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
 
-  .form-button.login a{
-    color: #fff;
-    text-decoration: none;
-  }
+.radio label{
+  display: inline-block;
+  margin: 15px; 
+}
+
+#submit {
+  background-color: #4caf50;
+  color: white;
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#reset {
+  background-color: #f44336;
+  color: white;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#submit:hover, #reset:hover {
+  opacity: 0.8;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #ddd;
+  margin-bottom: 20px;
+}
+
+.login {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.login a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
