@@ -1,8 +1,5 @@
-<!-- make the div colors to occupy more space, add a dropdown for vehicles and add latest news and some of javascript -->
-<!-- Add a return to top arrow -->
-
 <!DOCTYPE html>
-<html ng-app="Test-App">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <!-- Google fonts -->
@@ -21,7 +18,7 @@
     <link rel="stylesheet" href="./styles/index.css">
     <title>Document</title>
 </head>
-<body ng-controller="testCtrl">
+<body>
     <div class="main">
         <div class="flex-container">
             <div class="top-section">
@@ -29,8 +26,9 @@
                 <div id="header">
                     <div class="header-links">
                         <ul>
-                            <li class="logo"><a href="./index.html" class="link"><img src="./assets/logo/mercedes-logo.png" alt="Mercedes benz Trademark" height="70" width="70"></a><span class="logo-header">Mercedes-Benz</span></li>
-                            <li class="membership login"><a href="#">Login</a></li>
+                            <li class="logo logo-1"><img src="./assets/logo/mercedes-logo.png" alt="Mercedes benz Trademark" height="90" width="90"></li>
+                            <li class="logo logo-2"><img src="./assets/logo/AMG.png" alt="AMG" height="90" width="90"></li>
+                            <li class="membership login"><a href="./pages/login.html" target="_blank">Login</a></li>
                             <li class="membership sign-up"><a href="./pages/sign-up.html" target="_blank">Sign up</a> <span class="pipe">||</span></li>
                         </ul>
                     </div> <!-- End of header-links-->
@@ -39,9 +37,9 @@
                 <!-- navigation bar -->
                 <div class="navbar-links">
                 <ul>
-                    <li class="home"><a href="#">Home</a></li>
+                    <li class="home"><a href="./index.html">Home</a></li>
                     <li class="vehicles"><a href="./pages/vehicle.html">Vehicles</a></li>
-                    <li class="about"><a href="#">About</a></li>
+                    <li class="about"><a href="./pages/About.html">About</a></li>
                     <li class="socials"><a href="./pages/Socials.html">Socials</a></li>
                 </ul>
                 </div> <!-- End of navbar-links-->
@@ -53,49 +51,47 @@
                     <h1>Defining Class</h1>
                 </div>
 
-                <div class="left-align content-1">
+                <div class="left-align section content-1">
                     <img src=" ./assets/images/index-page/Mercedes-benz-ring.jpg" alt="Mercedes benz ring" height="800" width="550">
                     <p>Embark on a journey of elegance and innovation with our Mercedes collection. Where sophistication meets performance, every drive is a statement of luxury.</p>
                 </div>
             
-                <div class="right-align content-2">
+                <div class="right-align section content-2">
                     <img src=" ./assets/images/index-page/1910-Buick-model.jpg" alt="The 1910 MErcedes Buick model">
                     <p>Vintage allure, timeless prestige – Mercedes-Benz, where the echoes of sophistication reverberate through the ages. Step into the classic embrace of high-end craftsmanship that transcends time.</p>
                 </div>
         
-                <div class="left-align content-3">
+                <div class="left-align section content-3">
                         <img src=" ./assets/images/index-page/Mercedes-e-class.jpg" alt="Mercedes amg e-class" height= "300" width="900">
                         <p>Experience the thrill of commanding power under the hood, paired with an array of intelligent features that redefine connectivity and safety. The E-Class isn't just a car; it's a statement of refined taste, a harmonious blend of style and substance. Whether you crave the thrill of dynamic driving or the comfort of a first-class cabin, the Mercedes-Benz E-Class is poised to exceed your expectations, setting new standards in the world of luxury automobiles.</p>
                 </div>
                 
-                <div class="right-align content-4">
+                <div class="right-align section content-4">
                     <img src=" ./assets/images/index-page/mercedes-amg-s-63-e-interior.jpg" alt="Mercedes amg S-63 interior" height="700" width="1000">
                     <p>Elevate your drive to a realm of pure indulgence. The Mercedes-Benz S-Class is not just a car; it's a statement of refined taste, a sanctuary of comfort and style.</p>
                 </div>
             
-                <div class="left-align content-5">
-                    <img src=" ./assets/images/index-page/mercedes-c63s-coupe-black.jpeg" alt="Mercedes C-63s coupe" height="400" width="500">
+                <div class="left-align section content-5">
+                    <img src=" ./assets/images/index-page/mercedes-c63s-coupe-black.jpeg" alt="Mercedes C-63s coupe" height="700" width="900">
                     <p>Sculpted for the city, engineered for exhilaration. The Mercedes-Benz C-Class – your passport to a world where luxury and dynamism converge effortlessly.</p>
                 </div>
             
-                <div class="right-align content-6">
-                    <img src=" ./assets/images/index-page/1957-300-SL-coupe.jpg" alt="1957 300 SL coupe" height="800" width="600">
+                <div class="right-align section content-6">
+                    <img src=" ./assets/images/index-page/1957-300-SL-coupe.jpg" alt="1957 300 SL coupe" height="400" width="600">
                     <p>The 1957 300 SL Coupe – where nostalgia meets horsepower. A relic of the past that still roars with the spirit of adventure, reminding us of the golden age of automotive design and engineering.</p>
                 </div>
             
-                <div class="left-align content-7">
-                    <img src=" ./assets/images/index-page/Maybach-S-580.jpg" alt="Mercedes Maybach S-class">
+                <div class="left-align section content-7">
+                    <img src=" ./assets/images/index-page/Maybach-S-580.jpg" alt="Mercedes Maybach S-class" height="800" width="900">
                     <p>Crafted for those who demand the extraordinary, Maybach stands as a testament to automotive magnificence. Drive into a realm where time-honored tradition meets cutting-edge technology.</p>
                 </div>
             
-                <div class="right-align content-8">
+                <div class="right-align section content-8">
                     <img src=" ./assets/images/index-page/g_400d_amg_line-one_one.jpeg" alt="Mercedes G class amg" height="900" width="900">
                     <p>Distinguished on Any Terrain, Admired on Every Street – The G-Class: A Symbol of Grit and Glamour. Unapologetically bold, the G-Class commands attention wherever it goes. Whether navigating through rocky terrains or turning heads in the city, its presence is nothing short of iconic. But the G-Class isn't just about appearances; it's about substance. Behind its rugged exterior lies a vehicle engineered for peak performance and unmatched durability. It's a symbol of grit and glamour, where the raw power of off-road capability meets the refined elegance of a luxury SUV. Embrace the duality, embrace the legend – this is the G-Class.</p>
                 </div>
                 
             </div> <!-- End of main section-->
-
-            <!-- Latest news -->
 
         </div> <!-- End of flex-container-->
     
@@ -106,10 +102,9 @@
                 <ul>
                     <!-- links -->
                     <li><a href="./index.html">Home</a></li>
-                    <!-- Add dropdown -->
-                    <li><a href="">Vehicles</a></li>  
-                    <li><a href="">About</a></li>
-                    <li><a href="">Socials</a></li>
+                    <li><a href="./pages/vehicle.html">Vehicles</a></li>  
+                    <li><a href="./pages/About.html">About</a></li>
+                    <li><a href="./pages/Socials.html">Socials</a></li>
                 </ul>
             </div> <!-- End of footer links-->
         </div>  <!-- End of footer-->
