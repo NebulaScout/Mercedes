@@ -13,17 +13,22 @@ body {
 
 
 li{   
-    font-family: "Playfair Display", serif;
+    font-family:  Georgia, 'Times New Roman', Times, serif;
     font-size: large;
     list-style-type: none;
     display: inline-flex;
 }
 
  h1,h2{
-    font-family: "Playfair Display", serif;
+    font-family:  Georgia, 'Times New Roman', Times, serif;
     font-size: 4em;
     font-weight: 400;
     font-style: normal;
+}
+
+h1 {
+    font-weight: 100;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 img{

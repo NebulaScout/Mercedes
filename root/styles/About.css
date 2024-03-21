@@ -16,14 +16,14 @@ body {
 /* Style the header */
 
 h1,h2{
-    font-family: "Playfair Display", serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 4em;
     font-weight: 400;
     font-style: normal;
 }
 
 li{   
-    font-family: "Playfair Display", serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: large;
     list-style-type: none;
     display: inline-flex;
@@ -144,7 +144,7 @@ li {
 footer p{
     background-color: #000000;
     color: #ffffff;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
 }
 

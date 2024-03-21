@@ -2,12 +2,13 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  font-family: "Playfair Display", serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: 500;
 }
-
+/* TODO: Make pages consistent : 1. Add trademark, 2. Add same colors, 3. Add back to home icon*/
+/* TODO: Add icons in an accessible place, since they are used by multiple pages*/
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   background-color: #f5f5f5;
   display: block;
 }
