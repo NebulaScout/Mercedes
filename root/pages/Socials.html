@@ -8,20 +8,32 @@
 <link rel="stylesheet" href="../styles/socials.css">
 </head>
 <body>
+  <div class="top-section">
+    <!-- Header -->
+    <div id="header">
+        <div class="header-links">
+            <ul>
+                <li class="logo logo-1"><img src="../assets/logo/mercedes-logo.png" alt="Mercedes benz Trademark" height="90" width="90"></li>
+                <li class="logo logo-2"><img src="../assets/logo/AMG.png" alt="AMG" height="90" width="90"></li>
+            </ul>
+        </div> <!-- End of header-links-->
+    </div> <!-- End of header-->
+  </div> <!-- End of top-section-->
 
 <div class="container">
   <div class="content"> 
-    <!-- TODO: Remove the p-tag out of the submit review form and add an icon to show redirection to another page -->
+    
     <p><a href="https://media.mercedes-benz.com/">Stay connected with Mercedes for the latest updates and news.</a></p>
 
     <!-- Review Form -->
-    <div class="form">
+    <div class="form-container">
     <h2>Submit Your Review</h2>
     <form action="#" method="post">
       <div class="form-group">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
       </div>
+
       <div class="form-group">
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
@@ -31,21 +43,27 @@
         <label for="review">Review:</label>
         <textarea id="review" name="review" rows="4" required></textarea>
       </div>
-      <input type="submit" value="Submit">
+
+      <input type="submit" value="Submit"> <!-- submit-->
+      
+      <a class="back-home" href="../index.html"> <img src="../assets/images/icons/back-home.png" alt="An arrow pointing to the left" height="30" width="30"> Back to Home</a> <!-- back to home page-->
     </form>
-  </div> <!--end content-->
+  <!-- </div> end form-container -->
     <hr>
+
     <!-- Social Media Icons -->
     <div class="social-media">
       <!-- <h2>Follow us on social media</h2> -->
-    <ul>
-      <li><a href="https://www.youtube.com/@MercedesBenz"><img src="../assets/images/socials-page/youtube.png" alt="Youtube"></a></li>
-      <li><a href="https://twitter.com/MercedesBenz"><img src="../assets/images/socials-page/twitter2.png" alt="Twitter"></a></li>
-      <li><a href="https://www.instagram.com/mercedesbenz/?hl=en"><img src="../assets/images/socials-page/instagram.png" alt="Instagram"></a></li>
-      <li><a href="https://www.whatsapp.com/channel/0029Va7Hjp3BfxoCxnAj4Q3o"><img src="../assets/images/socials-page/whatsapp2.png" alt="Whatsapp channel"></a></li>
-    </ul>
-  </div>
-  </div>
-</div>
+      <ul>
+        <li><a href="https://www.youtube.com/@MercedesBenz"><img src="../assets/images/socials-page/youtube.png" alt="Youtube"></a></li>
+        <li><a href="https://twitter.com/MercedesBenz"><img src="../assets/images/socials-page/twitter2.png" alt="Twitter"></a></li>
+        <li><a href="https://www.instagram.com/mercedesbenz/?hl=en"><img src="../assets/images/socials-page/instagram.png" alt="Instagram"></a></li>
+        <li><a href="https://www.whatsapp.com/channel/0029Va7Hjp3BfxoCxnAj4Q3o"><img src="../assets/images/socials-page/whatsapp2.png" alt="Whatsapp channel"></a></li>
+      </ul>
+    </div> <!-- end of social-media-->
+
+  </div> <!--end form-container-->
+  </div> <!-- end of content-->
+</div> <!-- end of container-->
 </body>
 </html>
