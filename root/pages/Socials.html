@@ -3,7 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mercedes Socials</title>
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="../assets/favicon/mercedes.png">
+<title>Socials</title>
 <!-- Styles -->
 <link rel="stylesheet" href="../styles/socials.css">
 </head>
@@ -19,7 +21,7 @@
         </div> <!-- End of header-links-->
     </div> <!-- End of header-->
   </div> <!-- End of top-section-->
-
+<!-- TODO: Add a back to home button or icon...make it consistent with the others -->
 <div class="container">
   <div class="content"> 
     
@@ -28,7 +30,7 @@
     <!-- Review Form -->
     <div class="form-container">
     <h2>Submit Your Review</h2>
-    <form action="#" method="post">
+    <form action="../db-connection/process_review.php" method="post">
       <div class="form-group">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
@@ -41,10 +43,10 @@
 
       <div class="form-group">
         <label for="review">Review:</label>
-        <textarea id="review" name="review" rows="4" required></textarea>
+        <textarea id="review" name="rev" rows="4" required></textarea>
       </div>
 
-      <input type="submit" value="Submit"> <!-- submit-->
+      <input type="submit" name="submit" value="Submit"> <!-- submit-->
       
       <a class="back-home" href="../index.html"> <img src="../assets/images/icons/back-home.png" alt="An arrow pointing to the left" height="30" width="30"> Back to Home</a> <!-- back to home page-->
     </form>

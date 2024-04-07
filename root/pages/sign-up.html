@@ -8,11 +8,26 @@
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="../assets/favicon/mercedes.png">
   <title>Sign-up</title>
-  
+  <!-- TODO: Add back to home button or after form submission send user back to home page -->
+  <!-- TODO: Add back to home in the header or somewhere else -->
+  <!-- TODO: Work on the header size -->
 </head>
 <body>
-  <div class="form-container">
-    <form action="#" method="post">
+
+  <div class="top-section">
+    <!-- Header -->
+    <div id="header">
+        <div class="header-links">
+            <ul>
+                <li class="logo logo-1"><img src="../assets/logo/mercedes-logo.png" alt="Mercedes benz Trademark" height="90" width="90"></li>
+                <li class="logo logo-2"><img src="../assets/logo/AMG.png" alt="AMG" height="90" width="90"></li>
+            </ul>
+        </div> <!-- End of header-links-->
+    </div> <!-- End of header-->
+  </div> <!-- End of top-section-->
+
+  <div class="form-container sign-up">
+    <form action="../db-connection/sign-up.php" method="post">
       <div class="form-group">
           <fieldset>
             <div class="form-items">
@@ -49,7 +64,7 @@
               <label for="passwd">Password:</label> <br>
               <input type="password" id="passwd" name="passwd" required> <br>
 
-              <input type="submit" value="Submit" id="submit">&nbsp&nbsp <!--submit-->
+              <input type="submit" value="Submit" name="save" id="submit">&nbsp&nbsp <!--submit-->
               <input type="reset" value="Reset" id="reset">  <!--reset-->
 
               <!-- Login -->
@@ -61,5 +76,6 @@
       </div> <!--end form-group-->
     </form>
   </div> <!-- End form-container -->
+  <p>&copy; 2024 Mercedes-Benz</p>
 </body>
 </html>
