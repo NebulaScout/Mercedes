@@ -3,46 +3,65 @@
   margin: 0px;
   padding: 0px;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-weight: 500;
+  font-weight: 600;
+  
 }
 /* TODO: Make pages consistent : 1. Add trademark, 2. Add same colors, 3. Add back to home icon*/
 /* TODO: Add icons in an accessible place, since they are used by multiple pages*/
 body {
   font-family: 'Times New Roman', Times, serif;
-  background-color: #f5f5f5;
   display: block;
+  background-color: rgb(0, 0, 0);
+  margin-top: 1%;
+  padding-top: 0px;
+  
+  overflow: hidden;
 }
 
-img {
+.header-links ul li img {
+  max-width: 100%;
+  height: auto;
+  float: left;
+  margin-bottom: 10px;
+  padding-bottom: 25px;
+  padding-left: 10px;
+}
+
+
+.form-items img {
   height: 60px;
   width: 60px;
 }
 
 .form-container {
   background-color: #fff;
+
+}
+
+.form-items {
+  background-color: #fff;
   padding: 10px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(255, 249, 249, 0.1);
 }
 
 form {
   margin: 0 auto;
   height: 100vh;
-  max-height: fit-content;
   overflow: hidden;
 }
 
 fieldset {
-  border: 1px solid #ddd;
-  padding: 10px;
+  padding: 0px;
   border-radius: 6px;
   max-width: 50%;
   margin-left: 25%;
   margin-top: 2%;
+  
 }
 
 .form-items {
-  margin: 2%;
+  /* margin: 2%; */
 }
 
 legend {
@@ -73,7 +92,7 @@ label {
 }
 
 #submit {
-  background-color: #4caf50;
+  background-color: #000000;
   color: white;
   margin-top: 20px;
   padding: 10px;
@@ -83,7 +102,7 @@ label {
 }
 
 #reset {
-  background-color: #f44336;
+  background-color: #000000;
   color: white;
   margin-top: 10px;
   padding: 10px;
@@ -93,7 +112,12 @@ label {
 }
 
 #submit:hover, #reset:hover {
-  opacity: 0.8;
+  /* opacity: 0.8;*/
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  font-weight: 600;
+  font-size: 1em;
+  transition: ease-in .2s;
 }
 
 hr {
@@ -112,6 +136,19 @@ hr {
   color: #007bff;
   text-decoration: none;
   font-weight: bold;
+}
+
+p .membership{
+  color: #fff;
+}
+
+.sign-up{
+  margin: 2% auto;
+  
+}
+
+.login {
+  margin-top: 10%;
 }
 
 /* Responsive design */
