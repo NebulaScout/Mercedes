@@ -1,5 +1,4 @@
 //  to top feature
-
 const toTop = document.querySelector(".to-top");
 
 window.addEventListener("scroll", () => {

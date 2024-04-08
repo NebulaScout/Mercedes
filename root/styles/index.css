@@ -72,7 +72,6 @@ li .pipe {
     padding: 10px;
 }
 
-
 /* Navigation Bar */
 .navbar-links a{
     display: block;
@@ -236,6 +235,8 @@ html{
         font-size: larger;
         text-decoration: none;
 }
+
+
 
 /* Media Queries */
 @media  screen and (max-width: 750px) {
