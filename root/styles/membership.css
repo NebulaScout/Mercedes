@@ -6,15 +6,13 @@
   font-weight: 600;
   
 }
-/* TODO: Make pages consistent : 1. Add trademark, 2. Add same colors, 3. Add back to home icon*/
-/* TODO: Add icons in an accessible place, since they are used by multiple pages*/
+
 body {
   font-family: 'Times New Roman', Times, serif;
   display: block;
   background-color: rgb(0, 0, 0);
-  margin-top: 1%;
+  margin-top: 10px;
   padding-top: 0px;
-  
   overflow: hidden;
 }
 
@@ -27,19 +25,35 @@ body {
   padding-left: 10px;
 }
 
+.header-links li .back-home {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  float: right;
+  font-size: 1em;
+  padding: 0px;
+  margin: 0px;
+  padding-right: 25px;
+}
+
+.header-links li .back-home:hover {
+  padding-right: 50px;
+  transition: ease-in-out .4s;
+}
+
 
 .form-items img {
   height: 60px;
   width: 60px;
 }
 
-.form-container {
-  background-color: #fff;
+.form-container .sign-up{
+  background-color: #000000;
+  /* margin-top: 30%; */
 
 }
 
 .form-items {
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 10px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(255, 249, 249, 0.1);
@@ -60,9 +74,6 @@ fieldset {
   
 }
 
-.form-items {
-  /* margin: 2%; */
-}
 
 legend {
   font-size: 1.2em;
